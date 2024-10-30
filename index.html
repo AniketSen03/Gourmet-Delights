@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delights</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon"
+        href="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-food-logo-png-image_5687686.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <p class="announcement">Free delivery on orders over $50!</p>
+        </div>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="/" class="logo">
+                    <img src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-food-logo-png-image_5687686.png"
+                        alt="Gourmet Delights Logo">
+                </a>
+                <span>Gourmet Delights</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Appetizers</a></li>
+                            <li><a href="#">Main Courses</a></li>
+                            <li><a href="#">Desserts</a></li>
+                            <li><a href="#">Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contract.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            <div class="user-actions">
+                <a href="#" class="login">Login</a>
+                <a href="cart.html" target="_blank" class="cart">
+                    <img src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Ecommerce-Shopping-Cart-icon.png"
+                        alt="Cart">
+                    <span class="cart-count"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <img src="banner.png" alt="" width="100%" height="545em" class="banner">
+
+        <div class="center">
+            <section class="card-slider">
+                <button class="slider-button prev" id="prevBtn">&#10094;</button>
+                <div class="card-container" id="cardContainer">
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-photo/view-3d-delicious-looking-burger_23-2150914673.jpg?t=st=1724584091~exp=1724587691~hmac=91c840614ccecc5ccc168f4a7ec3a4058894a527edeaf72cd1136c9719b8189b&w=740"
+                            alt="Card 1">
+                        <h3>Burger</h3>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/colorful-birthday-cake-with-fresh-berries-candles-dark-background_1308157-164530.jpg?w=740"
+                            alt="Card 2">
+                        <h3>Cake</h3>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/served-with-colorful-spring-vegetables-creamy-parmesan-sauce-coats-pasta-rich-creamy-sauce_854723-49474.jpg?w=740"
+                            alt="Card 3">
+                        <h3>Pasta</h3>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-photo/vegetables-salad-table_23-2148515515.jpg?t=st=1724585958~exp=1724589558~hmac=35a38331722c9c3fe8261184f8e82159a045d443dbd8cd51ceb4624ca4fe3afa&w=740"
+                            alt="Card 3">
+                        <h3>Salaad</h3>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/bundi-laddoo-motichoor-laddu-prepared-pure-ghee-is-popular-sweet-item-festivals-as-offering-weddings-india_466689-67936.jpg?w=360"
+                            alt="Card 3">
+                        <h3>Ladoo</h3>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-photo/vertical-shot-vegetable-curry-with-cauliflower-beans-corn-spicy-pepper-lime_181624-31901.jpg?t=st=1724586754~exp=1724590354~hmac=2147c463798cc22c28999eb33ae6c02b23a7e672999aa7d75f7c26a023190171&w=740"
+                            alt="Card 4">
+                        <h3>Pure Veg</h3>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/premium-photo/savoring-kimchi-ramen-delectable-culinary-journey-through-food-photography_1231117-20085.jpg?w=740"
+                            alt="Card 4">
+                        <h3>Korean</h3>
+                    </div>
+                    <div class="card">
+                        <img src="https://img.freepik.com/free-photo/delicious-indian-food-tray_23-2148723505.jpg?t=st=1724586940~exp=1724590540~hmac=fd4872dfc9cf44dfd08a0681618c62f0d5b2e2fcd5bccb8a8cd3167706ec0e32&w=826"
+                            alt="Card 4">
+                        <h3>Contient</h3>
+                    </div>
+                    <!-- Add more cards as needed -->
+                </div>
+                <button class="slider-button next" id="nextBtn">&#10095;</button>
+            </section>
+
+            <div class="food-counter">
+                <div class="food-header">
+                    <ul>
+                        <button>
+                            <li class="all">All</li>
+                        </button>
+                        <button>
+                            <li class="southindian">south indian</li>
+                        </button>
+                        <button>
+                            <li class="punjabi">punjabi</li>
+                        </button>
+                        <button>
+                            <li class="bengali">bengali</li>
+                        </button>
+                        <button>
+                            <li class="gujrati">gujarati</li>
+                        </button>
+                        <button>
+                            <li class="korean">korean</li>
+                        </button>
+                        <button>
+                            <li class="spanish">spanish</li>
+                        </button>
+                        <button>
+                            <li class="chinese">chinese</li>
+                        </button>
+                        <button>
+                            <li class="contitional">continental</li>
+                        </button>
+                        <button>
+                            <li class="thai">Thai</li>
+                        </button>
+                    </ul>
+
+                    <div class="foodincounter">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Gourmet Delights is your destination <br> for a world of flavors, crafted with <br>passion and served
+                    with love.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong>123 Gourmet Delights Restaurant, Vidisha 464001</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@gourmetdelights.com</p>
+            </div>
+
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <a href="https://www.facebook.com/"><img
+                        src="https://img.icons8.com/material-rounded/24/000000/facebook-new.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img
+                        src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="Instagram"></a>
+                <a href="https://www.twitter.com/"><img
+                        src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="Twitter"></a>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29266.736885740353!2d77.79450306332353!3d23.520194694968886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c04502a3166f5%3A0x7da6896331548213!2sVidisha%2C%20Madhya%20Pradesh%20464001!5e0!3m2!1sen!2sin!4v1730277950965!5m2!1sen!2sin"
+                width="300" height="250" style="border-radius: 5px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gourmet Delights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="cart.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gourmet Delights</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-food-logo-png-image_5687686.png" type="image/x-icon">
+<style>
+    .contact-container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 2rem auto; /* Center the container with margin */
+    padding: 2rem; /* Add padding inside the container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.contact-container h3 {
+    color: #2c3e50; /* Darker color for headings */
+    margin-top: 1.5rem; /* Space above headings */
+}
+
+.contact-container p {
+    line-height: 1.6; /* Improved readability */
+    margin: 0.5rem 0; /* Space between paragraphs */
+}
+
+.contact-form .form-label {
+    font-weight: bold; /* Bold labels */
+}
+
+.contact-form .btn {
+    margin-top: 1rem; /* Space above button */
+}
+
+.contact-container ul {
+    list-style-type: none; /* No bullets for the list */
+    padding: 0; /* Remove padding */
+}
+
+.contact-container ul li {
+    margin: 0.5rem 0; /* Space between list items */
+}
+.user-actions{
+    visibility: hidden;
+}
+</style>
+    </head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <p class="announcement">Free delivery on orders over $50!</p>
+        </div>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="/" class="logo">
+                    <img src="https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-food-logo-png-image_5687686.png"
+                        alt="Gourmet Delights Logo">
+                </a>
+                <span>Gourmet Delights</span>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#">Menu</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Appetizers</a></li>
+                            <li><a href="#">Main Courses</a></li>
+                            <li><a href="#">Desserts</a></li>
+                            <li><a href="#">Beverages</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-actions">
+                <a href="#" class="login">Login</a>
+                <a href="cart.html" target="_blank" class="cart">
+                    <img src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Ecommerce-Shopping-Cart-icon.png"
+                        alt="Cart">
+                    <span class="cart-count"></span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <h3>Contact Us</h3>
+        <p>We’d love to hear from you! Please fill out the form below or reach us through the contact information
+            provided.</p>
+
+        <form action="#" method="post" class="contact-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <h4>Contact Information</h4>
+        <p>If you prefer to reach us directly, here’s how you can do it:</p>
+        <ul>
+            <li><strong>Phone:</strong> (123) 456-7890</li>
+            <li><strong>Email:</strong> info@gourmetdelights.com</li>
+            <li><strong>Address:</strong> 123 Gourmet Delights Restaurant, Vidisha 464001</li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Gourmet Delights is your destination <br>for a world of flavors, crafted with <br> passion and served with love.</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><strong>Address:</strong>123 Gourmet Delights Restaurant, Vidisha 464001</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> info@gourmetdelights.com</p>
+            </div>
+    
+            <div class="footer-section social-media">
+                <h4>Follow Us</h4>
+                <a href="#"><img src="https://img.icons8.com/material-rounded/24/000000/facebook-new.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="Instagram"></a>
+                <a href="#"><img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="Twitter"></a>
+            </div>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29266.736885740353!2d77.79450306332353!3d23.520194694968886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c04502a3166f5%3A0x7da6896331548213!2sVidisha%2C%20Madhya%20Pradesh%20464001!5e0!3m2!1sen!2sin!4v1730277950965!5m2!1sen!2sin"
+            width="300" height="250" style="border-radius: 5px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Gourmet Delights. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

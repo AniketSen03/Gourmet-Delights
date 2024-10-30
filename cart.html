@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Gourmet Delights</title>
+    <style>
+        /* Add some basic styles */
+        body {
+            background: #1b1b1b;
+            color: white;
+            text-transform: capitalize;
+        }
+
+
+        h1 {
+            color: white;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            border: 2px solid darkorange;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            height: 8em;
+            text-transform: capitalize;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .cart-item img {
+            margin-right: 20px;
+            height: 7em;
+            width: 7em;
+            border-radius: 5px;
+        }
+
+        .cart-item h3 {
+            margin: 0;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            width: 10em;
+        }
+
+        .rate {
+            background: rgb(11, 214, 11);
+            font-size: 15px;
+            padding: 5px 15px;
+            font-weight: 800;
+            width: 3em;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        button {
+            background: red;
+            font-size: 15px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: white;
+            border: none;
+        }
+
+        .ptp {
+            background: rgb(0, 196, 0);
+            border: none;
+            color: white;
+            font-size: 15px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            height: 3em;
+            margin-top: 10px;
+        }
+
+        .box {
+            display: flex;
+            width: 100%;
+        }
+
+        #cartItemsContainer {
+            width: 90%;
+            margin: 0 10px;
+        }
+
+        .proceed {
+            width: 30%;
+            margin: 0 10px;
+            text-transform: capitalize;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .inner {
+            display: flex;
+            flex-direction: column;
+            border: 2px solid darkorange;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .info {
+            border: 2px solid darkorange;
+            border-radius: 4px;
+            margin-bottom: 18px;
+        }
+
+        #coupon{
+            height: 3em;
+            border-radius: 4px;
+            margin: 15px 0;
+            padding: 0 4px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        #address {
+            resize: none;
+
+        }
+        .quantity{
+            background: darkorange;
+            width: 45px;
+            text-align: center;
+            border: none;
+            font-size: 15px;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+   
+
+</head>
+
+<body>
+    <h1>Your Cart</h1>
+    <div class="box">
+
+        <div id="cartItemsContainer">
+        </div>
+        <div class="proceed">
+            <div class="info">
+                <form>
+                    <label for="">name</label>
+                    <input type="text" style="height: 2em;">
+                    <label for="">address</label>
+                    <textarea name="" id="address"></textarea>
+                    <h2>Payment Mode</h2>
+                    <label>
+                        <input type="radio" name="paymentMode" value="cash" checked>
+                        Cash
+                    </label>
+                    <label>
+                        <input type="radio" name="paymentMode" value="online">
+                        Online Payment
+                    </label>
+                    <button class="ptp">Proceed to Payment</button>
+                </form>
+            </div>
+           <div class="outer">
+           
+           </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
